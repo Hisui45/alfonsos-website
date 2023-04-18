@@ -3,14 +3,166 @@
     <head>
         <title>Alfonso's Shell Shack</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="sea-turtle.png" type="image/x-icon">
     </head>
     <body>
-        <h1>Alfonso's Shell Shack</h1>
+       
         <header>
-            <a href="index.html"> Home</a>
-            <a href="hours.html">Hours</a>
-            <a href="contact.html">Make Reservations</a>
+            <h1>Alfonso's Shell Shack</h1>
+            <nav>
+                <a href="index.html"> Home</a>
+                <a href="hours.html">Hours</a>
+                <a href="contact.html">Catering</a>
+            </nav>
+            
         </header>
-        <h2>Make a reservation</h2>
+
+
+        <main>
+            <h2>Request Catering</h2>
+            <section id="catering-form">
+
+                <form action="https://httpbin.org/get"
+                method="get">
+
+                
+
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name = "firstName" id="firstName" autocomplete="on"
+                            required autofocus>
+    
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name = "lastName" id="lastName"  required>
+                        </p>
+    
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name = "phone" id="phone" required autocomplete pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Order Details</legend>
+                        <p>
+                            <label for="numPeople">Number of People:</label>
+                            <input type="number" name = "numPeople" id="numPeople" placeholder ="Minimun 6 people" min="6" required>
+                        </p>
+
+                        <label for="food" > <strong>Select 3 Options</strong></label>
+                        <p>
+                        
+                            <input type="checkbox" name="food" id="shrimpScampi" value="shrimpScampi">
+                            <label for="shrimpScampi">Shrimp Scampi</label>
+
+                            <input type="checkbox" name="food" id="grilledOctopus" value="grilledOctopus">
+                            <label for="grilledOctopus">Grilled Octopus</label>
+
+                            <input type="checkbox" name="food" id="lobsterMac" value="lobsterMac">
+                            <label for="lobsterMac">Lobster Mac</label>
+
+                            <input type="checkbox" name="food" id="fish" value="fish">
+                            <label for="fish">Fish</label>
+
+                            <input type="checkbox" name="food" id="shrimplinguini" value="shrimplinguini">
+                            <label for="shrimplinguini">Shrimp </label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            Pickup Details
+                        </legend>
+                        <p>
+                            <label for="date">Date:</label>
+
+                            
+    
+                            <input type="number" name = "month" id="month" min="1" max= "12" value = "4" required>
+    
+                            <input type="number" name = "day" id="day" min="1" max= "31" value = "18" required>
+
+                            <input type="number" name = "year" id="year" min="2023" max= "2024" value = "2023" required>
+    
+                            
+    
+                        </p>
+    
+    
+                        <p>
+                            <label for="time">Pickup Time:</label>
+                            <select name="time" id="time">
+    
+                                <optgroup label="Morning">
+                                    <option value = 9:00AM>
+                                        <time datetime="9:00">9:00AM</time>
+                                    </option>
+                                </optgroup>
+                                
+                                <optgroup label="Afternoon">
+                                    <option value = 12:00PM >
+                                        <time datetime="12:00">12:00PM</time>
+                                    </option>
+        
+                                    <option value = 3:00PM>
+                                        <time datetime="15:00">3:00PM</time>
+                                    </option>
+                                </optgroup>
+                                
+                                <optgroup label="Evening">
+                                    <option value = 5:00PM>
+                                        <time datetime="17:00">5:00PM</time>
+                                    </option>
+        
+                                    <option value = 8:00PM>
+                                        <time datetime="20:00">8:00PM</time>
+                                    </option>
+                                </optgroup>
+                                
+    
+                            </select>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Details</legend>
+                        <label for="details"></label>
+                    
+                        <textarea name ="details" id="details" rows="10" cols="30" placeholder="Allergies, requests"></textarea>
+                    </fieldset>
+                
+                    <!-- <button type="submit">Submit</button> --> 
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                    <button type="reset">Clear</button>
+                    <br>
+
+                </form>
+                
+                
+            </section>
+            <br>
+        </main>
+
+
+
+        
+
+        <footer>
+            <a href= "tel:+1234567890">(123) 456-7890</a>
+                <address>
+                    58342 Main Street <br>
+                    Coastal Town, Maine <br>
+                    United States, 67923
+                </address>
+            <a href="/">Back to Home</a>
+            <a href="https://github.com/Hisui45/alfonsos-website" target="_blank"> GitHub
+                </a>
+        </footer>
     </body>
 </html>
+
+<!-- <p>Email me at <a href="mailto:jadelocke85@gmail.com?subject= Reservations "> my email</a></p> -->
