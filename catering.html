@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Alfonso's Shell Shack</title>
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="sea-turtle.png" type="image/x-icon">
@@ -9,19 +10,21 @@
        
         <header>
             <h1>Alfonso's Shell Shack</h1>
-            <nav>
-                <a href="index.html"> Home</a>
-                <a href="hours.html">Hours</a>
-                <a href="contact.html">Catering</a>
+            <nav aria-label="primary-navigation">
+                <a href= "index.html"> Home</a>
+                <a href="index.html#menu">Menu</a>
+                <a href= "index.html#hours">Hours</a>
+                <a href="catering.html">Catering</a>
+                <a href="index.html#location">Location</a>
             </nav>
             
         </header>
 
 
         <main>
-            <h2>Request Catering</h2>
+            
             <section id="catering-form">
-
+                <h2>Request Catering</h2>
                 <form action="https://httpbin.org/get"
                 method="get">
 
@@ -42,7 +45,7 @@
     
                         <p>
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" name = "phone" id="phone" required autocomplete pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                            <input type="tel" name = "phone" id="phone" required autocomplete="on" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
                         </p>
                     </fieldset>
 
@@ -53,7 +56,7 @@
                             <input type="number" name = "numPeople" id="numPeople" placeholder ="Minimun 6 people" min="6" required>
                         </p>
 
-                        <label for="food" > <strong>Select 3 Options</strong></label>
+                        <label for="shrimpScampi" > <strong>Select 3 Options</strong></label>
                         <p>
                         
                             <input type="checkbox" name="food" id="shrimpScampi" value="shrimpScampi">
@@ -78,7 +81,7 @@
                             Pickup Details
                         </legend>
                         <p>
-                            <label for="date">Date:</label>
+                            <label for="month">Date:</label>
 
                             
     
@@ -98,28 +101,29 @@
                             <select name="time" id="time">
     
                                 <optgroup label="Morning">
-                                    <option value = 9:00AM>
-                                        <time datetime="9:00">9:00AM</time>
+                                    <option value = "9:00AM"> 
+                                        9:00AM
+                                    
                                     </option>
                                 </optgroup>
                                 
                                 <optgroup label="Afternoon">
                                     <option value = 12:00PM >
-                                        <time datetime="12:00">12:00PM</time>
+                                        12:00PM
                                     </option>
         
                                     <option value = 3:00PM>
-                                        <time datetime="15:00">3:00PM</time>
+                                        3:00PM
                                     </option>
                                 </optgroup>
                                 
                                 <optgroup label="Evening">
                                     <option value = 5:00PM>
-                                        <time datetime="17:00">5:00PM</time>
+                                        5:00PM
                                     </option>
         
                                     <option value = 8:00PM>
-                                        <time datetime="20:00">8:00PM</time>
+                                        8:00PM
                                     </option>
                                 </optgroup>
                                 
@@ -159,6 +163,7 @@
                     United States, 67923
                 </address>
             <a href="/">Back to Home</a>
+            <a href="index.html#faq">Frequently Asked Questions</a>
             <a href="https://github.com/Hisui45/alfonsos-website" target="_blank"> GitHub
                 </a>
         </footer>
