@@ -1,14 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Sail&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
 html{
+    background: navajowhite;
+    background-color: #1D2D44;
+    background-color: white;
+   
+} */
+
+
+body{
+    min-height:100vh;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    line-height: 1.5;
+    background-color: #326b9c;
+    background-image: url("img/lined-paper-2.png");
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    letter-spacing: 0.1rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1em;
+    margin-bottom: 2%;   
+    /* border: 5px solid #1d2d44; */
+    /* box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7); */
+}
+
+header{
+    /* width: 50%; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em; 
+    text-align: center;
+    color: black;
+}
+
+nav{
+    padding: 0.2em;
     text-align: center;
     
+    /* background-color: white; */
+    /* border-radius: 1em;  */
+    /* border: 5px solid #1d2d44; */
+    /* box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7); */ 
+}
+
+
+nav a{
+
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-inline: 0.5em;  
+}
+
+
+nav a:hover, a:focus{
+    color: #96031A;
+    text-transform: uppercase;
+}
+
+
+main{
+    background: url(img/so-white_400x400.png);
+    color: #0D1321
     
 }
 
+
+/* .box { bottom
+--mask:
+    radial-gradient(86.82px at 50% calc(100% - 119.25px),#000 99%,#0000 101%) calc(50% - 90px) 0/180px 100%,
+    radial-gradient(86.82px at 50% calc(100% + 74.25px),#0000 99%,#000 101%) 50% calc(100% - 45px)/180px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  } */
+  .box {
+    --mask:
+      radial-gradient(86.82px at 50% 119.25px,#000 99%,#0000 101%) calc(50% - 90px) 0/180px 100%,
+      radial-gradient(86.82px at 50% -74.25px,#0000 99%,#000 101%) 50% 45px/180px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+article{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.2em;
+}
+
+h2{
+    font-family:'Pacifico', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 0.2em;
+    padding-top: 3.5em;
+ 
+
+}
+p{
+    text-align: left;
+    text-indent: 1em;
+}
+
+.div-image{
+    width: 512px;
+    height:512px;
+    margin: 1em 1em 1.5em 1em;
+
+}
+
+.img{
+    margin-inline: 1em; 
+}
+
+.right{
+    float:right;
+}
+
+figure figcaption{
+    font-size: 1rem;
+    text-align: center;
+    color: #648767;
+}
+
+
+
+
+
+
 table, tr, th, td, caption{
-    border: 1px solid black;
+    border: 1px solid #0D1321;   
     border-collapse: collapse;
     padding: 0.5rem;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
+
+
+
+footer a{
+ text-decoration: none;
+ color: #56584E;
+}
+footer a:visited{
+    color: #0D1321;
+}
+footer a:hover, a:focus{
+    color: #1D2D44;
+    font-size: 1.05em;
+}
+ button, input, select, textarea{  
+    font:inherit;
+} 
+
+
+
+
+/* Uranian Blue: #a3d9ff lighter
+   Navajo white: #FFDEAD
+   Reseda Green: #648767
+   Rich black: #0D1321
+   Prussian Blue: #1d2d44 darker
+   Carmine: #96031A
+    */
