@@ -6,13 +6,15 @@
 }
 
 
-/* 
+
 html{
-    background: navajowhite;
+
+    scroll-behavior: smooth;
+    /* background: navajowhite;
     background-color: #1D2D44;
-    background-color: white;
+    background-color: white; */
    
-} */
+}
 
 
 body{
@@ -37,8 +39,9 @@ h1{
     /* box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7); */
 }
 
+
 header{
-    /* width: 50%; */
+
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.5em; 
@@ -46,7 +49,7 @@ header{
     color: black;
 }
 
-nav{
+header nav{
     padding: 0.2em;
     text-align: center;
     
@@ -74,7 +77,9 @@ nav a:hover, a:focus{
 
 main{
     background: url(img/so-white_400x400.png);
-    color: #0D1321
+    color: #0D1321;
+    padding-bottom: 4em;
+    border-bottom: 1px solid #fafafa;
     
 }
 
@@ -94,21 +99,97 @@ main{
             mask: var(--mask);
   }
 
-article{
+.article-about{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.2em;
+    padding-top: 5em;
+}
+
+.article-catering{
+    /* width: 1%; */
+    margin-left: 6em;
+    margin-right: 3em;
+    /* margin-right: auto; */
+    padding-top: 5em;
+}
+
+.article-catering img{
+    margin-top:4em;
 }
 
 h2{
     font-family:'Pacifico', cursive;
     letter-spacing: 2px;
     margin-bottom: 0.2em;
-    padding-top: 3.5em;
- 
+    /* padding-top: 3.5em; */
+}
+
+
+.catering-container{
+    margin-top: 1em;
+    display:flex;
+    flex-wrap: wrap;
+    gap:4em;
+}
+
+.div-catering{
+    width:55%;
 
 }
+
+form{
+    padding: 1em;
+    background-color: #faf3dd;
+    background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    min-width:400px;
+    width:33%;
+    border:1px solid gray;
+
+}
+
+
+
+fieldset{
+    border: none;
+    margin-bottom:1em;
+}
+
+fieldset p{
+    padding-inline-start: 1em;
+}
+
+
+legend{
+    margin-bottom: 0.2em;
+    
+}
+
+label{
+    font-size:0.9rem;
+    display:block;
+    text-indent: 0;
+}
+
+input,select{
+    margin: 0.3em;
+    margin-inline:0;
+}
+
+.choose-menu{
+    width:70%;  
+    column-count: 2;
+    column-width: 270px;
+    column-gap: 0;
+}
+
+.choose-menu label{
+    display: inline;
+    
+}
+
+
 p{
     text-align: left;
     text-indent: 1em;
@@ -135,20 +216,26 @@ figure figcaption{
     color: #648767;
 }
 
+thead th{
+    padding-inline-end: 7em;
+}
+.hours td{
+    padding-inline-end: 0.5em;
+} 
 
-
-
-
-
-table, tr, th, td, caption{
-    border: 1px solid #0D1321;   
-    border-collapse: collapse;
-    padding: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;    
+footer{
+    background: url(img/ripples.png);
+    padding: 1em;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap; 
 }
 
-
+footer ul{
+    list-style-type: none;
+    margin-inline-end:1em;
+}
 
 footer a{
  text-decoration: none;
@@ -158,13 +245,15 @@ footer a:visited{
     color: #0D1321;
 }
 footer a:hover, a:focus{
+    text-transform: none;
+    text-decoration: underline;
     color: #1D2D44;
-    font-size: 1.05em;
 }
+
+
  button, input, select, textarea{  
     font:inherit;
 } 
-
 
 
 
@@ -175,3 +264,13 @@ footer a:hover, a:focus{
    Prussian Blue: #1d2d44 darker
    Carmine: #96031A
     */
+
+
+    
+/* table, tr, th, td, caption{
+    border: 1px solid #0D1321;   
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;    
+} */
