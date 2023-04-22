@@ -12,9 +12,8 @@
             <h1>Alfonso's Shell Shack</h1>
             <nav aria-label="primary-navigation">
                 <a href= "index.html"> Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#location">Location</a>
-                <!-- <a href= "#hours">Hours</a> -->
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#location">Location</a>
                 <a href="about.html">About</a>
                 <a href="catering.html">Catering</a>
                 
@@ -30,116 +29,42 @@
 
                 <section  class="catering-container">
                     <div class="div-catering">
-                        <p>Looking for fresh and delicious seafood catering for your next event or party? Look no further than Alfonso's Shell Shack! Our catering services bring the same high-quality seafood and friendly service you know and love from our restaurant directly to your event.</p>
-
-                        <p>At Alfonso's Shell Shack, we pride ourselves on serving only the freshest seafood available. Our catering options include a wide range of seafood platters, sides, and desserts, all prepared with the same care and attention to detail that our customers have come to expect from us.</p> 
-                        
-                        <p>Whether you're hosting a small gathering or a large-scale event, our catering services can be customized to meet your needs. We can provide everything from individual seafood platters to full-service catering with beverages and desserts. And if you have any dietary restrictions or preferences, just let us know - we're happy to accommodate.
-                        </p>
-        
-                        <p>So if you want to impress your guests with delicious and fresh seafood, choose Alfonso's Shell Shack for your catering needs. Contact us today to discuss your options and let us help make your event one to remember!</p>
-
-                        <img src="img/cater-image.jpg" width="658" height="432">
-                    </div>
-
-                    <form action="https://httpbin.org/get"
+                        <form action="https://httpbin.org/get"
                 method="get">
                     <fieldset>
                         <legend>Personal Information</legend>
                         <p>
-                            <label for="firstName">First Name</label>
-                            <input type="text" name = "firstName" id="firstName" autocomplete="on"
-                            required placeholder="First Name" autofocus>
+                            <label for="name">Name</label>
+                            <input type="text" name = "name" id="name" autocomplete="on"
+                            required placeholder="" autofocus>
     
                         </p>
-                        <p>
+                        <!-- <p>
                             <label for="lastName">Last Name</label>
                             <input type="text" name = "lastName" id="lastName"  required placeholder="Last Name">
-                        </p>
+                        </p> -->
     
                         <p>
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name = "phone" id="phone" required autocomplete="on" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                            <input type="tel" name = "phone" id="phone" required autocomplete="on" placeholder="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
                         </p>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Order Details</legend>
-                        <p>
-                            <label for="numPeople">Servings:</label>
-                            <input type="number" name = "numPeople" id="numPeople" placeholder ="6 minimum" min="6" value = "6"required>
-                        </p>
-                        
-                        <fieldset class="choose-menu">
-                            <legend>Choose Your Menu</legend>
-
-                            <p>
-                                <input type="checkbox" name="food" id="shrimpScampi" value="shrimpScampi">
-                                <label for="shrimpScampi">Shrimp Scampi</label>   
-                            </p>
-                            <p>
-                                <input type="checkbox" name="food" id="grilledOctopus" value="grilledOctopus">
-                                <label for="grilledOctopus">Grilled Octopus</label>
-                            </p>
-                            
-                            <p>
-                                <input type="checkbox" name="food" id="lobsterMac" value="lobsterMac">
-                                <label for="lobsterMac">Lobster Mac</label>
-                            </p>
-                            
-                            <p>
-                                <input type="checkbox" name="food" id="fish" value="fish">
-                                <label for="fish">Fish</label>
-                            </p>
-
-                            <p>
-                                <input type="checkbox" name="food" id="shrimplinguini" value="shrimplinguini">
-                                <label for="shrimplinguini">Shrimp Linguini </label>
-                            </p>
-
-                            <p>
-                                <input type="checkbox" name="food" id="platter" value="platter">
-                                <label for="platter">Platter of shrimp, oysters, crab</label>
-                            </p>
-
-                            <p>Sides</p>
-
-                            <p>
-                                <input type="checkbox" name="food" id="coleslaw" value="coleslaw">
-                                <label for="coleslaw">Coleslaw</label>
-                            </p>
-
-                            <p>
-                                <input type="checkbox" name="food" id="hushpuppies" value="hushpuppies">
-                                <label for="hushpuppies">Hush Puppies </label>
-                            </p>
-
-                            <p>
-                                <input type="checkbox" name="food" id="frenchfries" value="frenchfries">
-                                <label for="frenchfries">French Fries</label>
-                            </p>
-
-                            
-                        </fieldset>
-                        
                     </fieldset>
 
                     <fieldset>
                         <legend>
-                            Pickup Details
+                            Pickup Information
                         </legend>
                         <p>
-                            <label for="month">Date:</label>
+                            <label for="month">Date</label>
  
-                            <input type="date" name="pickup-date" >
+                            <input type="date" name="pickup-date" value=" " >
                             <!-- set value,min,max with javascript -->
-                            
-    
+                        
                         </p>
     
     
                         <p>
-                            <label for="time">Pickup Time:</label>
+                            <label for="time">Time</label>
                             <select name="time" id="time">
     
                                 <!-- <optgroup label="Morning">
@@ -175,42 +100,152 @@
                     </fieldset>
 
                     <fieldset>
+                        <legend>Order Details</legend>
+                        <p>
+                            <label for="numPeople">Servings (min. 6)</label>
+                            <input type="number" name = "numPeople" id="numPeople" placeholder ="" min="6" value = "" required>
+                        </p>
+                        
+                        <fieldset class="order-details">
+                            <p><label>Choose Your Menu</label>
+                                <details class="choose-menu">
+                                    <summary>
+                                        Entrees
+                                    </summary>
+                                    <p>
+                                        <input type="checkbox" name="food" id="shrimpScampi" value="shrimpScampi">
+                                        <label for="shrimpScampi">Shrimp Scampi</label>   
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" name="food" id="grilledOctopus" value="grilledOctopus">
+                                        <label for="grilledOctopus">Grilled Octopus</label>
+                                    </p>
+                                    
+                                    <p>
+                                        <input type="checkbox" name="food" id="lobsterMac" value="lobsterMac">
+                                        <label for="lobsterMac">Lobster Mac</label>
+                                    </p>
+                                    
+                                    <p>
+                                        <input type="checkbox" name="food" id="fish" value="fish">
+                                        <label for="fish">Fish</label>
+                                    </p>
+        
+                                    <p>
+                                        <input type="checkbox" name="food" id="shrimplinguini" value="shrimplinguini">
+                                        <label for="shrimplinguini">Shrimp Linguini </label>
+                                    </p>
+        
+                                    <p>
+                                        <input type="checkbox" name="food" id="platter" value="platter">
+                                        <label for="platter">Shrimp, oysters, crab platter</label>
+                                    </p>
+                                </details>
+                                <details class="choose-menu">
+                                    <summary>
+                                        Sides
+                                    </summary>
+                                    <p>
+                                        <input type="checkbox" name="food" id="coleslaw" value="coleslaw">
+                                        <label for="coleslaw">Coleslaw</label>
+                                    </p>
+        
+                                    <p>
+                                        <input type="checkbox" name="food" id="hushpuppies" value="hushpuppies">
+                                        <label for="hushpuppies">Hush Puppies </label>
+                                    </p>
+        
+                                    <p>
+                                        <input type="checkbox" name="food" id="frenchfries" value="frenchfries">
+                                        <label for="frenchfries">French Fries</label>
+                                    </p>
+                                </details>
+                            </p>
+                           
+                        </fieldset>       
+                    </fieldset>
+                    <fieldset>
                         <legend>Additional Details</legend>
                         <label for="details"></label>
-                    
-                        <textarea name ="details" id="details" rows="5" cols="20" placeholder="Allergies,dietary restrictions or preferences"></textarea>
+                        <textarea name ="details" id="details" rows="5" cols="26" placeholder="Allergies,dietary restrictions or preferences"></textarea>
+                        
                     </fieldset>
                 
                     <!-- <button type="submit">Submit</button> --> 
-                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
-                    <button type="reset">Clear</button>
-                    <br>
+                    <div class="catering-button-container">
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                    
+                    
 
                 </form>
-                    </section>
-                
-                
-                
-                
+                        <p>Looking for fresh and delicious seafood catering for your next event or party? Look no further than Alfonso's Shell Shack! Our catering services bring the same high-quality seafood and friendly service you know and love from our restaurant directly to your event.</p>
+
+                        
+
+                        <p>At Alfonso's Shell Shack, we pride ourselves on serving only the freshest seafood available. Our catering options include a wide range of seafood platters, sides, and desserts, all prepared with the same care and attention to detail that our customers have come to expect from us.</p> 
+                        
+                        <p>Whether you're hosting a small gathering or a large-scale event, our catering services can be customized to meet your needs. We can provide everything from individual seafood platters to full-service catering with beverages and desserts. And if you have any dietary restrictions or preferences, just let us know - we're happy to accommodate.
+                        </p>
+        
+                        <p>So if you want to impress your guests with delicious and fresh seafood, choose Alfonso's Shell Shack for your catering needs. Contact us today to discuss your options and let us help make your event one to remember!</p>
+
+                        
+
+                        <img src="img/cater-image.jpg" width="658" height="432">
+                    </div>
+
+                    </section>  
             </article>
            
         </main>
 
 
-
-        
-
         <footer>
-            <a href= "tel:+1234567890">(123) 456-7890</a>
-                <address>
-                    58342 Main Street <br>
-                    Coastal Town, Maine <br>
-                    United States, 67923
-                </address>
-            <a href="/">Back to Home</a>
-            <a href="index.html#faq">Frequently Asked Questions</a>
-            <a href="https://github.com/Hisui45/alfonsos-website" target="_blank"> GitHub
-                </a>
+                <ul>
+                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                    <li><a href="resources.html">Resources</a></li>  
+                    <li><a href="https://github.com/Hisui45/alfonsos-website" target="_blank"> GitHub</a></li>  
+                    <li><a href="/">Back to Home</a></li>
+    
+               </ul>
+
+                <table>
+                    <thead>
+                        <th>Location:</th>
+                        <th>Hours:</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href= "tel:+1234567890">(123) 456-7890</a>
+                                <address>
+                                    58342 Main Street <br>
+                                    Coastal Town, Maine <br>
+                                    United States, 67923
+                                </address>
+                            </td>
+            
+                            <td><table class="hours">
+                                <tr>
+                                    <td>Mon-Thu:</td>
+                                    <td>11AM-9PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri-Sat:</td>
+                                    <td>11AM-10PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>11AM-9PM</td>
+                                </tr>
+                            </table>
+                            
+                        </td>  
+                        </tr>
+                    </tbody> 
+                </table>  
         </footer>
     </body>
 </html>
