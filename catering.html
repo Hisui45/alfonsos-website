@@ -38,12 +38,7 @@
                             <input type="text" name = "name" id="name" autocomplete="on"
                             required placeholder="" autofocus>
     
-                        </p>
-                        <!-- <p>
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name = "lastName" id="lastName"  required placeholder="Last Name">
-                        </p> -->
-    
+                        </p>    
                         <p>
                             <label for="phone">Phone Number</label>
                             <input type="tel" name = "phone" id="phone" required autocomplete="on" placeholder="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
@@ -66,14 +61,6 @@
                         <p>
                             <label for="time">Time</label>
                             <select name="time" id="time">
-    
-                                <!-- <optgroup label="Morning">
-                                    <option value = "9:00AM"> 
-                                        9:00AM
-                                    
-                                    </option>
-                                </optgroup> -->
-                                
                                 <optgroup label="Afternoon">
                                     <option value = 12:00PM >
                                         12:00PM
@@ -156,8 +143,8 @@
                                     </p>
         
                                     <p>
-                                        <input type="checkbox" name="food" id="frenchfries" value="frenchfries">
-                                        <label for="frenchfries">French Fries</label>
+                                        <input type="checkbox" name="food" id="mashedpotatoes" value="mashedpotatoes">
+                                        <label for="mashedpotatoes">Mashed Potatoes</label>
                                     </p>
                                 </details>
                             </p>
@@ -176,16 +163,9 @@
                         <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
                         <button type="reset">Clear</button>
                     </div>
-                    
-                    
-
                 </form>
                         <p>Looking for fresh and delicious seafood catering for your next event or party? Look no further than Alfonso's Shell Shack! Our catering services bring the same high-quality seafood and friendly service you know and love from our restaurant directly to your event.</p>
-
-                        
-
                         <p>At Alfonso's Shell Shack, we pride ourselves on serving only the freshest seafood available. Our catering options include a wide range of seafood platters, sides, and desserts, all prepared with the same care and attention to detail that our customers have come to expect from us.</p> 
-                        
                         <p>Whether you're hosting a small gathering or a large-scale event, our catering services can be customized to meet your needs. We can provide everything from individual seafood platters to full-service catering with beverages and desserts. And if you have any dietary restrictions or preferences, just let us know - we're happy to accommodate.
                         </p>
         
@@ -193,7 +173,11 @@
 
                         
 
-                        <img src="img/cater-image.jpg" width="658" height="432">
+                        <figure class="article-catering-figure">
+                            <img src="img/cater-image.jpg" width="640" height="427">
+                            <figcaption></figcaption>
+                        </figure>
+                        
                     </div>
 
                     </section>  
@@ -204,11 +188,10 @@
 
         <footer>
                 <ul>
-                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                    <li><a href="index.html#faq">Frequently Asked Questions</a></li>
                     <li><a href="resources.html">Resources</a></li>  
                     <li><a href="https://github.com/Hisui45/alfonsos-website" target="_blank"> GitHub</a></li>  
-                    <li><a href="/">Back to Home</a></li>
-    
+                    <!-- <li><a href="/">Back to Home</a></li> -->
                </ul>
 
                 <table>
