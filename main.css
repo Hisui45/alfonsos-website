@@ -44,6 +44,11 @@ button, input, select, textarea{
 }
 
 
+@media screen and (min-width: 481px) {
+    
+}
+
+
 /* HEADER */
 
 h1{
@@ -409,12 +414,15 @@ figure figcaption{
     margin-top:2em;
 }
 
+/* ATTRIBUTION PAGE */
+
 .article-attributes{
     width: 80%;
     margin-left:auto;
     margin-right: auto;
     padding-top: 5em;
     padding-bottom:1em;
+    min-height: 200vh;
 }
 
 h2{
