@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Sail&display=swap');
+
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+img{display: block;}
 
-
+ /* GENERAL SETTINGS */
 html{
-
     scroll-behavior: smooth;
-    /* background: navajowhite;
-    background-color: #1D2D44;
-    background-color: white; */
-   
 }
-
 
 body{
     min-height:100vh;
@@ -26,6 +23,29 @@ body{
     background-image: url("img/lined-paper-2.png");
 }
 
+
+button, input, select, textarea{  
+    font:inherit;
+} 
+
+/* PROPERTIES */
+
+.right{
+    float:right;
+}
+
+.left{
+  float:left
+}
+
+.offscreen{
+    position: absolute;
+    left:-10000000px;
+}
+
+
+/* HEADER */
+
 h1{
     font-family: 'Pacifico', cursive;
     font-size: 2em;
@@ -33,19 +53,14 @@ h1{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0.1em; */
-    /* margin-bottom: 2%;    */
-    /* border: 5px solid #1d2d44; */
-    /* box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.7); */
 }
 
-#index-h1{
+.index-header h1{
     font-size: 3em;
 }
 
-#index-nav{
+.index-header nav{
     padding-top:1em;
-    /* padding-bottom: 1em; */
 }
 
 
@@ -88,11 +103,6 @@ nav a:hover, a:focus{
     transform: scaleX(-1);
   }
 
-  .rotate-90{
-    transform: rotate(90deg);
-  }
-
-
 .header-img{
     width: 100%;
     height:auto;
@@ -110,12 +120,6 @@ nav a:hover, a:focus{
     
    
 }
-/* 
-.header-content-a:hover, .header-content-a:focus{
-    text-decoration: underline;
-} */
-
-
 
 .quote{
     display: flex;
@@ -124,6 +128,9 @@ nav a:hover, a:focus{
     font-size: 1.8em;
 }
 
+
+/* MAIN */
+
 main{
     background: url(img/so-white_400x400.png);
     color: #0D1321;
@@ -131,9 +138,6 @@ main{
     border-bottom: 2px solid black;
     
 }
-
-img{display: block;}
-
 
 /* .box { bottom
 --mask:
@@ -150,7 +154,7 @@ img{display: block;}
             mask: var(--mask);
   }
 
-
+/* INDEX PAGE */
 .article-description{
     width: 80%;
     margin-left: auto;
@@ -191,10 +195,8 @@ img{display: block;}
     justify-items: center;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    /* background-color: #bc5746;
-    background-image: url("https://www.transparenttextures.com/patterns/crossword.png"); */
     background-color: #bc5746;
-    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    background-image: url("img/low-contrast-linen.png");
 
 color: #000;
 
@@ -249,7 +251,6 @@ color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     min-width: 280px;
 
 }
@@ -273,8 +274,7 @@ color: #000;
     border: 3px solid black;
     background: #bc5746;
     background-color: #bc5746;
-    background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("img/wine-cork.png");
     color: black;
     text-decoration: none;
 
@@ -336,7 +336,6 @@ color: #000;
     cursor: pointer;
 }
 .article-index-faq-figure{
-    /* padding-top: 1em; */
     grid-column-start: 1;
     grid-column-end: 2;
     width: 100%;
@@ -358,6 +357,8 @@ color: #000;
 
 }
 
+/* ABOUT PAGE */
+
 .article-about{
     width: 80%;
     margin-left: auto;
@@ -365,6 +366,30 @@ color: #000;
     padding-top: 5em;
     padding-bottom:1em;
 }
+
+
+.article-about p{
+    text-align: left;
+    text-indent: 1em;
+}
+
+.article-about-figure{
+    margin: 1em 1em 1.5em 1em;
+    width:40%;
+}
+
+.article-about-figure img{
+    width:100%;
+    height: auto;
+}
+
+figure figcaption{
+    font-size: 1rem;
+    text-align: center;
+    color: #648767;
+}
+
+/* CATERING PAGE */
 
 .article-catering{
     width: 80%;
@@ -376,7 +401,6 @@ color: #000;
 
 .article-catering-figure{
     width: 40%;
-    /* float:inline-end; */
 }
 
 .article-catering-figure img{
@@ -385,22 +409,26 @@ color: #000;
     margin-top:2em;
 }
 
+.article-attributes{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 5em;
+    padding-bottom:1em;
+}
+
 h2{
     font-family:'Pacifico', cursive;
     letter-spacing: 2px;
     margin-bottom: 0.2em;
-    /* padding-top: 3.5em; */
 }
 
-
-
 form{
-    /* display:inline; */
     margin-top: 3em;
     margin-left: 2em;
     padding: 1em ;
     background-color: #fae38e;
-    background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
+    background-image: url("img/sandpaper.png");
     min-width:400px;
     width:33%;
     border:1px solid #FDF0C4;
@@ -408,21 +436,16 @@ form{
 
 }
 
-
-
 fieldset{
     border: none;
-    /* margin-bottom:1em; */
 }
 
 fieldset p{
     padding-inline-start: 1em;
 }
 
-
 legend{
-    margin-bottom: 0.2em;
-    
+    margin-bottom: 0.2em;   
 }
 
 label{
@@ -435,7 +458,6 @@ input,select{
     margin: 0.3em;
     margin-inline:0;
 }
-
 
 .choose-menu{
     width:70%;  
@@ -459,27 +481,12 @@ input,select{
     
 }
 
-
-.article-about p{
-    text-align: left;
-    text-indent: 1em;
-}
-
 .article-catering{
     text-align: left;
     text-indent: 1em;
 }
 
-.article-about-figure{
-    margin: 1em 1em 1.5em 1em;
-    width:40%;
-}
-
-.article-about-figure img{
-    width:100%;
-    height: auto;
-}
-
+/* MENU */
 
 .article-menu{
     width: 70%;
@@ -488,9 +495,7 @@ input,select{
     padding-top: 5em;
     padding-bottom:1em;
     display: grid;
-    /* grid-template-rows: ; */
     grid-auto-rows: 5%, 45%,45%;
-    /* grid-template-columns: repeat(2, 50%); */
 }
 
 
@@ -528,40 +533,26 @@ input,select{
 
 .article-menu-section-item-price{
     grid-column: 2/3;
-    text-align: right;
-    /* padding-right: 1em; */
-   
+    text-align: right;   
 } 
 
 .article-menu-section-item-description {
     grid-column: 1/2;
     min-width: 255px;
 }
-.right{
-    float:right;
-}
 
-.left{
-  float:left
-}
-
-figure figcaption{
-    font-size: 1rem;
-    text-align: center;
-    color: #648767;
-}
+/* FOOTER */
 
 thead th{
     padding-inline-end: 7em;
 }
 .hours td{
     padding-inline-end: 0.5em;
-} 
+}
 
 footer{
     background-color: #39b0ae;
-    background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
-    /* background: url(img/ripples.png); */
+    background-image: url("img/foggy-birds.png");
     padding: 1em;
     text-align: left;
     font-size: 1rem;
@@ -576,24 +567,14 @@ footer ul{
 
 footer a{
  text-decoration: none;
- color: #56584E;
+ color: black
 }
-footer a:visited{
-    color: #0D1321;
-}
+
 footer a:hover, a:focus{
     text-transform: none;
     /* text-decoration: underline; */
     color: #1D2D44;
 }
-
-
- button, input, select, textarea{  
-    font:inherit;
-} 
-
-
-
 
 
 /* Uranian Blue: #a3d9ff lighter
@@ -603,16 +584,4 @@ footer a:hover, a:focus{
    Prussian Blue: #1d2d44 darker
    Carmine: #96031A
     */
-
-
-    
-/* table, tr, th, td, caption{
-    border: 1px solid #0D1321;   
-    border-collapse: collapse;
-    padding: 0.5rem;
-    margin-left: auto;
-    
-    
-    margin-right: auto;    
-} */
 
