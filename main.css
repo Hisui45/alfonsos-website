@@ -103,6 +103,18 @@ nav a:hover, a:focus{
   align-items: center;
 }
 
+.header-content figure{
+    width:29%;
+}
+
+/* @media screen and (min-width:375px) {
+    .header-content figure{
+        width:29%;
+    }
+    
+} */
+
+
 .header-img{
     width: 100%;
     height:auto;
@@ -117,6 +129,7 @@ nav a:hover, a:focus{
     margin-right: auto;
     font-size: 1em;
     min-width: 115px;  
+    display: none;
     /* margin: 0.4em; */
 }
 
@@ -124,18 +137,19 @@ nav a:hover, a:focus{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0.5em;
     font-size: 1.5em;
 }
 
 @media screen and (min-width:375px) {
     .quote{
-        font-size:0.75em;
+        font-size:1em;
     }
 }
 
 @media screen and (min-width:425px) {
     .quote{
-        font-size: 0.75em;
+        font-size: 1em;
     }
 }
 
