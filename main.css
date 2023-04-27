@@ -45,7 +45,6 @@ body{
     font-family: 'Bree Serif', serif;
     background-color: #326b9c;
     background-image: url("img/lined-paper-2.png");
-    background-size: contain;
     line-height: 1.5;
     font-size: 0.5rem;
 }
@@ -75,15 +74,15 @@ body{
 @media screen and (min-width:1024px) {
     body{
         line-height: 1.5;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 }
 
-@media screen and (min-width:1440px) {
-    /* body{
+@media screen and (min-width:2560px) {
+    body{
         line-height: 1.5;
-        font-size: 1.8rem;
-    } */
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -91,8 +90,8 @@ body{
 
 h1{
     font-family: 'Pacifico', cursive;
-    /* font-size: 2em; */
-    /* letter-spacing: 0.2rem; */
+    font-size: 3em;
+    /* letter-spacing: 0.1rem; */
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -101,18 +100,13 @@ h1{
 header{
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 1em;  */
+    padding-top: 1em; 
     text-align: center;
     color: black;
     text-align: center;
 }
 
-#index-header{
-    padding-top: 1em;
-}
-
 nav a{
-
     color: inherit;
     text-decoration: none;
     font-size: 1.1em;
@@ -150,7 +144,7 @@ nav a:hover, a:focus{
     margin-right: auto;
     font-size: 1em;
     min-width: 115px;  
-    display: none;
+    /* display: none; */
     margin-top: 0.4em;
 }
 
@@ -171,22 +165,6 @@ nav a:hover, a:focus{
         font-size: 1.7em;
     }
 }
-
-.index-header h1{
-    font-size: 3em;
-}
-
-/* @media screen and (min-width:425px) {
-    .index-header h1{
-        font-size: 2rem;
-    }
-}
- */
-
-.index-header nav{
-    /* padding-top:1em; */
-}
-
 
 /* MAIN */
 
@@ -467,7 +445,7 @@ color: #000;
 
 /* ABOUT PAGE */
 
-/* .article-about{
+.article-about{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -495,7 +473,7 @@ figure figcaption{
     font-size: 1rem;
     text-align: center;
     color: #648767;
-} */
+}
 
 /* CATERING PAGE */
 
