@@ -181,7 +181,7 @@ main{
 }
 
 p{
-    font-size: 1.6em;
+    font-size: 1.9em;
 }
 
 .box {
@@ -250,10 +250,12 @@ p{
 /* INDEX PAGE */
 .article-description{
     /* width: 80%; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-inline: 2em;
     padding-top: 5em;
     padding-bottom:3em;
+    
 }
 
 .article-description-section{
@@ -275,7 +277,9 @@ p{
 }
 
 .article-description-section p{
-    width: 75%;
+    /* width: 75%; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .p-text-align{
@@ -283,7 +287,7 @@ p{
 }
 
 .article-description-figure{
-    width:40%;
+    width:35%;
     margin: 2em;
 }
 
