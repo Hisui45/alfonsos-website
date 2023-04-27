@@ -578,7 +578,7 @@ figure figcaption{
 
 /* CATERING PAGE */
 
-/* .article-catering{
+.article-catering{
     width: 80%;
     margin-left:auto;
     margin-right: auto;
@@ -594,19 +594,7 @@ figure figcaption{
     width: 100%;
     height: auto;
     margin-top:2em;
-} */
-
-/* ATTRIBUTION PAGE */
-
-/* .article-attributes{
-    width: 80%;
-    margin-left:auto;
-    margin-right: auto;
-    padding-top: 5em;
-    padding-bottom:1em;
 }
-
-
 
 form{
     margin-top: 3em;
@@ -669,7 +657,19 @@ input,select{
 .article-catering{
     text-align: left;
     text-indent: 1em;
-} */
+}
+
+
+/* ATTRIBUTION PAGE */
+
+.article-attributes{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 5em;
+    padding-bottom:1em;
+}
+
 
 /* MENU */
 
