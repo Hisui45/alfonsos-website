@@ -90,9 +90,9 @@ body{
 
 h1{
     font-family: 'Pacifico', cursive;
-    font-size: 3em;
+    font-size: 4em;
     /* letter-spacing: 0.1rem; */
-    width: 75%;
+    /* width: 75%; */
     margin-left: auto;
     margin-right: auto;
 }
