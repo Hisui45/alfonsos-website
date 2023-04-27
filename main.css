@@ -54,8 +54,36 @@ body{
 @media screen and (min-width:375px) {
     body{
         line-height: 1.5;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
+}
+
+@media screen and (min-width:425px) {
+    body{
+        line-height: 1.5;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        line-height: 1.5;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    /* body{
+        line-height: 1.5;
+        font-size: 1.8rem;
+    } */
 }
 
 
@@ -105,16 +133,8 @@ nav a:hover, a:focus{
 }
 
 .header-content figure{
-    width:29%;
+    width:31%;
 }
-
-/* @media screen and (min-width:375px) {
-    .header-content figure{
-        width:29%;
-    }
-    
-} */
-
 
 .header-img{
     width: 100%;
@@ -131,28 +151,24 @@ nav a:hover, a:focus{
     font-size: 1em;
     min-width: 115px;  
     display: none;
-    /* margin: 0.4em; */
+    margin-top: 0.4em;
+}
+
+@media screen and (min-width:1024px) {
+    .header-content-a{
+        display: block;
+    }
 }
 
 .quote{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding: 0.5em; */
     font-size: 1.5em;
 }
 
-@media screen and (min-width:375px) {
+@media screen and (min-width:1440px) {
     .quote{
-        font-size:1em;
-    }
-}
-
-@media screen and (min-width:425px) {
-    .quote{
-        font-size: 1em;
+        font-size: 1.7em;
     }
 }
 
@@ -160,12 +176,12 @@ nav a:hover, a:focus{
     font-size: 3em;
 }
 
-@media screen and (min-width:425px) {
+/* @media screen and (min-width:425px) {
     .index-header h1{
         font-size: 2rem;
     }
 }
-
+ */
 
 .index-header nav{
     /* padding-top:1em; */
