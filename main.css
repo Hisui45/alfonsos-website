@@ -319,7 +319,7 @@ h2{
 }
 
 .article-description-section p{
-    width: 95%;
+    /* width: 95%; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -330,10 +330,19 @@ h2{
     margin: 1em;
 }
 
+@media screen and (min-width:425px) {
+    
+    .article-description-figure{
+        width:35%;
+        margin: 1em;
+    }
+    
+}
+
 @media screen and (min-width:768px) {
     
     .article-description-figure{
-        width:40%;
+        width:30%;
         margin: 1em;
     }
     
@@ -343,7 +352,7 @@ h2{
 @media screen and (min-width:1024px) {
     
     .article-description-figure{
-        width:25%;
+        width:40%;
         margin: 1em;
     }
     
@@ -538,12 +547,12 @@ color: #000;
 .article-about p{
     text-align: left;
     text-indent: 1em;
-    width: 95%;
+    /* width: 95%; */
 }
 
 .article-about-figure{
 
-    margin: 2em;
+    padding: 0.5em;
     width:75%;
     margin-left: auto;
     margin-right: auto;
