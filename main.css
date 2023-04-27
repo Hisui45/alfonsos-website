@@ -47,11 +47,11 @@ body{
     background-image: url("img/lined-paper-2.png");
     background-size: contain;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 
-@media screen and (min-width:425px) {
+@media screen and (min-width:375px) {
     body{
         line-height: 1.5;
         font-size: 1rem;
@@ -125,6 +125,12 @@ nav a:hover, a:focus{
     justify-content: center;
     flex-direction: column;
     font-size: 1.5em;
+}
+
+@media screen and (min-width:375px) {
+    .quote{
+        font-size:0.75em;
+    }
 }
 
 @media screen and (min-width:425px) {
