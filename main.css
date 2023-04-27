@@ -543,14 +543,15 @@ color: #000;
 
 .article-about-figure{
 
-    margin: 1em 1em 1.5em 1em;
-    width:40%;
+    margin: 2em;
+    width:75%;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     .article-about-figure{
+        width:40%;
         float: right;
     }
 }
@@ -561,7 +562,7 @@ color: #000;
 }
 
 figure figcaption{
-    font-size: 1rem;
+    font-size: 0.8em;
     text-align: center;
     color: #648767;
 }
