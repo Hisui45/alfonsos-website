@@ -28,6 +28,10 @@ button, input, select, textarea{
     left:-10000000px;
 }
 
+.flip-horizontally {
+    transform: scaleX(-1);
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -47,6 +51,14 @@ body{
 }
 
 
+@media screen and (min-width:425px) {
+    body{
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+}
+
+
 
 
 
@@ -60,15 +72,6 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-
-.index-header h1{
-    /* font-size: 3em; */
-}
-
-.index-header nav{
-    /* padding-top:1em; */
-}
-
 
 header{
     margin-left: auto;
@@ -105,9 +108,7 @@ nav a:hover, a:focus{
   align-items: center;
 }
 
-.flip-horizontally {
-    transform: scaleX(-1);
-  }
+
 
 .header-img{
     width: 100%;
@@ -122,9 +123,8 @@ nav a:hover, a:focus{
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
-    min-width: 115px;
-    
-   
+    min-width: 115px;  
+    margin: 0.4em;
 }
 
 .quote{
@@ -133,6 +133,37 @@ nav a:hover, a:focus{
     flex-direction: column;
     font-size: 1.5em;
 }
+
+@media screen and (min-width:425px) {
+    .quote{
+        font-size: 0.75em;
+    }
+}
+
+
+
+
+.index-header h1{
+    font-size: 3em;
+}
+
+@media screen and (min-width:425px) {
+    .index-header h1{
+        font-size: 2em;
+    }
+}
+
+
+
+
+.index-header nav{
+    /* padding-top:1em; */
+}
+
+
+
+
+
 
 
 /* MAIN */
