@@ -54,7 +54,7 @@ body{
 @media screen and (min-width:375px) {
     body{
         line-height: 1.5;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -101,6 +101,7 @@ nav a:hover, a:focus{
   align-content: space-between;
   justify-content: center;
   align-items: center;
+  /* display: none; */
 }
 
 .header-content figure{
