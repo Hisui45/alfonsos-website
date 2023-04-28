@@ -94,7 +94,7 @@ body{
 
 h1{
     font-family: 'Pacifico', cursive;
-    /* font-size: 3.5em; */
+    font-size: 3.5em;
     /* letter-spacing: 0.1rem; */
     /* width: 75%; */
     margin-left: auto;
@@ -113,7 +113,7 @@ header{
 nav a{
     color: inherit;
     text-decoration: none;
-    /* font-size: 1.4em; */
+    font-size: 1.4em;
     margin-inline: 0.5em;  
 }
 
@@ -161,12 +161,12 @@ nav a:hover, a:focus{
 .quote{
     display: flex;
     flex-direction: column;
-    /* font-size: 1.6em; */
+    font-size: 1.6em;
 }
 
 @media screen and (min-width:1440px) {
     .quote{
-        /* font-size: 1.8em; */
+        font-size: 1.8em;
     }
 }
 
@@ -239,7 +239,7 @@ main{
   }
 
 p{
-    /* font-size: 1em; */
+    font-size: 1em;
 }
 
 /* @media screen and (min-width: 425px) {
@@ -696,7 +696,7 @@ input,select{
 }
 
 .article-menu-section h3{
-    /* font-size: 1em; */
+    font-size: 1em;
 }
 
 .article-menu-div{
@@ -722,7 +722,7 @@ input,select{
 
 .article-menu-section-item h4{
     grid-column: 1/2;
-    /* font-size: 1em; */
+    font-size: 1em;
 }
 
 
