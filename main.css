@@ -708,7 +708,7 @@ footer{
 footer section{
     display: flex;
     flex-wrap: wrap;
-    gap:0.5em;
+    gap:1em;
 }
 
 footer ul{
