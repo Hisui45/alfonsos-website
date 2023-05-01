@@ -793,13 +793,6 @@ input,select{
 
 /* FOOTER */
 
-thead th{
-    padding-inline-end: 7em;
-}
-.hours td{
-    padding-inline-end: 0.5em;
-}
-
 footer{
     background-color: #39b0ae;
     background-image: url("img/foggy-birds.png");
@@ -808,6 +801,12 @@ footer{
     font-size: 1rem;
     display: flex;
     flex-wrap: wrap; 
+}
+
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5em;
 }
 
 footer ul{
