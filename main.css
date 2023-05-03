@@ -334,9 +334,27 @@ color: #000;
 }
 
 .article-review-figure{
-    width:7%;
+    width:18%;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+@media screen and (min-width:768px){
+    .article-review-figure{
+    width:12%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .article-review-figure{
+    width:10%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .article-review-figure{
+    width:7%;
+}
 }
 
 .article-review-figure img{
@@ -352,7 +370,7 @@ color: #000;
 }
 
 .article-review section{
-    padding: 0.5em;
+    padding: 0.3em;
     font-size: 0.8em;
     text-align:center;
     display: flex;
@@ -374,23 +392,35 @@ color: #000;
     padding: 0.2em;
 }
 
-/* .article-index{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 4em;
-    padding-bottom: 4em;
+.article-index{
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:1024px){
+    .article-index{
+        padding-top: 2.5em;
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    }
+
+    .location{
+        grid-column: 1/2;
+    }
+
+    .menu{
+        grid-column:2/3;
+    }
 }
 
 .article-index-section{
-    width: 50%;
+
+    padding-bottom: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 280px;
-
 }
 
 .article-index-header{
@@ -408,7 +438,7 @@ color: #000;
     text-align: center;
     padding: 1em 3em 1em 3em;
     margin: 3em;
-    min-width: 280px;
+    /* min-width: 280px; */
     border: 3px solid black;
     background: #bc5746;
     background-color: #bc5746;
@@ -430,16 +460,15 @@ color: #000;
 }
 
 
-.article-index-location{
+.article-index-location-div{
     display:flex;
     justify-content: center;
-    padding: 1em;
     flex-wrap: wrap;
+    gap:1em;
 }
 
-.article-index-location section{
-    min-width: 250px;
-    width: 35%;   
+.article-index-location-div table{
+    padding-top: 1.3em;
 }
 
 .article-index-location a{
@@ -456,7 +485,7 @@ color: #000;
     padding-right: 0.2em;
 }
 
-.article-index-faq{
+/* .article-index-faq{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -583,7 +612,7 @@ figure figcaption{
 @media screen and (min-width:1024px){
 
     .article-catering-form{
-        margin-left: 1em;
+        margin-left: 2em;
         margin-top: 3em;
         display: inline-block;
         max-width: 425px;
